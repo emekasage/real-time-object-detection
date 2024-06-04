@@ -62,7 +62,7 @@ const ObjectDetection = () => {
           <span className="loading loading-spinner loading-lg text-primary-700" />
         </div>
       ) : (
-        <div className="relative border border-[#755AE2] rounded-[10px]">
+        <div className="relative border border-primary-50 rounded-[10px]">
           {/* webcam */}
           <Webcam
             ref={webcamRef}

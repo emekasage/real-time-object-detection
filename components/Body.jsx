@@ -29,11 +29,11 @@ const Body = () => {
               item.id === 1 || item.id === 3 ? (
                 <div
                   key={item.id}
-                  className="bg-[#F5F3FF] relative flex flex-col justify-center items-center rounded-[10px]"
+                  className="bg-primary-100 relative flex flex-col justify-center items-center rounded-[10px]"
                 >
                   <div className="flex flex-col justify-center items-center py-4 px-10 space-y-1.5">
-                    <div className="border-[3px] bg-[#E6E0FF] border-[#755AE2] rounded-full p-1">
-                      <div className="bg-[#755AE2] rounded-full p-2">
+                    <div className="border-[3px] bg-primary-75 border-primary-50 rounded-full p-1">
+                      <div className="bg-primary-50 rounded-full p-2">
                         <Image
                           priority
                           src={item.mainIcon}
@@ -46,7 +46,7 @@ const Body = () => {
                     </div>
                     <p className="text-xs">{item.title}</p>
                   </div>
-                  <div className="absolute rounded-full p-1 bg-[#755AE2] top-1 right-1">
+                  <div className="absolute rounded-full p-1 bg-primary-50 top-1 right-1">
                     <Image
                       priority
                       src={item.subIcon}
@@ -60,14 +60,14 @@ const Body = () => {
               ) : (
                 <div
                   key={item.id}
-                  className="bg-[#F5F3FF] relative flex flex-col justify-center items-center rounded-[10px]"
+                  className="bg-primary-100 relative flex flex-col justify-center items-center rounded-[10px]"
                 >
                   <div className="flex flex-col justify-center items-center py-4 px-10 space-y-1.5">
                     <div
                       className={`border-[3px] ${
                         item.id === 2
-                          ? "bg-[#FF5F56] border-r-[#FF5F56] border-t-[#FF5F56]"
-                          : "bg-[#755AE2] border-r-[#755AE2] border-t-[#755AE2]"
+                          ? "bg-secondary-50 border-r-secondary-50 border-t-secondary-50"
+                          : "bg-primary-50 border-r-primary-50 border-t-primary-50"
                       } bg-opacity-10 rotate-45 rounded-full p-2`}
                     >
                       <Image
@@ -83,7 +83,7 @@ const Body = () => {
                   </div>
                   <div
                     className={`absolute rounded-full p-1 ${
-                      item.id === 2 ? "bg-[#FF5F56]" : "bg-[#755AE2]"
+                      item.id === 2 ? "bg-secondary-50" : "bg-primary-50"
                     } top-1 right-1`}
                   >
                     <Image

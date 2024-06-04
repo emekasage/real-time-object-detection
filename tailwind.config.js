@@ -24,6 +24,7 @@ module.exports = {
         },
         neutral: {
           50: "#8C8CA1",
+          100: "#F8F9FB",
         },
       },
     },

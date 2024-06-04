@@ -10,7 +10,7 @@ const Body = () => {
   return (
     <>
       {openModal && <StartAssessmentModal closeModal={setOpenModal} />}
-      <div className="bg-[#F8F9FB] pt-6 pb-12 min-h-[672px]">
+      <div className="bg-neutral-100 pt-6 pb-12 min-h-[672px]">
         <div className="bg-white max-w-4xl flex flex-col py-10 px-8 lg:px-16 mx-auto rounded-none md:rounded-[20px]">
           <div className="flex flex-col space-y-2">
             <h2 className="text-xl font-medium">System check</h2>

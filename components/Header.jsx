@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Header = () => {
-  const [showTimer, setShowTimer] = useState(false);
+  const [showTimer, setShowTimer] = useState(true);
   const toggleTimerVisiblity = () => {
     setShowTimer(showTimer ? false : true);
   };

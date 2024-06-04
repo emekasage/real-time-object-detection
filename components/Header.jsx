@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white py-6 px-16 flex justify-between items-center">
+    <header className="bg-white py-6 px-8 lg:px-16 flex flex-col md:flex-row justify-between items-start md:items-center space-y-3 md:space-y-0">
       <div className="flex items-center space-x-3">
         <Link href="/">
           <Image

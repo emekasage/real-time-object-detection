@@ -1,12 +1,12 @@
+import { systemInfo } from "@/system-info";
 import Image from "next/image";
 import React from "react";
 import ObjectDetection from "./ObjectDetection";
-import { systemInfo } from "@/system-info";
 
 const Body = () => {
   return (
     <div className="bg-[#F8F9FB] pt-6 pb-12 min-h-[672px]">
-      <div className="bg-white max-w-4xl flex flex-col py-10 px-16 mx-auto rounded-[20px]">
+      <div className="bg-white max-w-4xl flex flex-col py-10 px-8 lg:px-16 mx-auto rounded-none md:rounded-[20px]">
         <div className="flex flex-col space-y-2">
           <h2 className="text-xl font-medium">System check</h2>
           <p className="text-sm leading-[22px]">
@@ -22,7 +22,7 @@ const Body = () => {
             yourself by clicking the button below.
           </p>
         </div>
-        <div className="flex items-start space-x-4 py-5">
+        <div className="flex flex-col lg:flex-row items-start space-x-0 space-y-5 lg:space-y-0 lg:space-x-5 py-5">
           <ObjectDetection />
           <div className="grid grid-cols-2 gap-4">
             {systemInfo.map((item) =>
